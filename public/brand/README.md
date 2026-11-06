@@ -5,7 +5,7 @@ size is derived by resizing the supplied artwork.
 
 | File | Required | Notes |
 | --- | --- | --- |
-| `menace-logo.png` | yes | The official Menace mark exactly as supplied (currently 320×320, square). Used by the header, footer and the Menace Mode intro. |
+| `menace-logo.png` | yes | The official Menace mark (currently 320×320, square). The mark itself is untouched; its opaque purple backdrop was keyed out to transparent so it sits on any surface. Used by the header, footer and the Menace Mode intro. |
 | `menace-logo-512.png` | optional | Downscaled copy if the source file is very large. Resize only — never redraw. |
 | `app-icon` source | optional | Copy `menace-logo.png` to `app/icon.png` for the favicon. |
 
