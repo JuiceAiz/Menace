@@ -1,12 +1,19 @@
 # Brand assets
 
-Drop the official files here. Nothing in this folder is redrawn or approximated.
+Official files only. Nothing in this folder is redrawn or approximated — every
+size is derived by resizing the supplied artwork.
 
 | File | Required | Notes |
 | --- | --- | --- |
-| `menace-logo.png` | yes | The official Menace mark exactly as supplied. Square, 512×512 or larger, transparent background preferred. Used by the header, footer and the Menace Mode intro. |
+| `menace-logo.png` | yes | The official Menace mark exactly as supplied (currently 320×320, square). Used by the header, footer and the Menace Mode intro. |
 | `menace-logo-512.png` | optional | Downscaled copy if the source file is very large. Resize only — never redraw. |
-| `app-icon` source | optional | Copy `menace-logo.png` to `app/icon.png` (512×512) for the favicon. |
+| `app-icon` source | optional | Copy `menace-logo.png` to `app/icon.png` for the favicon. |
 
-Until `menace-logo.png` exists, `<BrandLogo />` renders an empty brand-coloured slot
-(no fake logo) and the browser logs a single 404 for the missing file.
+`hasLogoAsset` in `lib/brand.ts` checks for `menace-logo.png` at build time. When
+the file is present, `<BrandLogo />` renders it. When it is missing, the
+component renders the MENACE wordmark (or nothing, for the mark-only variant) and
+never requests the missing file, so no 404 appears in the console.
+
+Replacing the artwork: drop in a new `menace-logo.png`, then rebuild (or restart
+`npm run dev`). If the new file is not square, update the `width`/`height` props in
+`components/brand/logo.tsx` to match its real dimensions.
