@@ -23,7 +23,6 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env
-.env
 .env*.local
 
 # vercel
@@ -34,3 +33,4 @@ yarn-error.log*
 
 # local logs
 *.log
+config.bat
