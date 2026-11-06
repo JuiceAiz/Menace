@@ -43,8 +43,8 @@ export function BrandLogo({
     <img
       src={LOGO_SRC}
       alt={alt}
-      width={512}
-      height={512}
+      width={320}
+      height={320}
       decoding="async"
       onError={(event) => {
         // Stale build after the asset was removed: hide rather than show a broken icon.
