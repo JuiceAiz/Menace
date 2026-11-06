@@ -85,7 +85,13 @@ export function Newsletter() {
                   inputMode="email"
                   placeholder="you@example.com"
                   value={email}
-                  onChange={(event) => setEmail(event.target.value)}
+                  onChange={(event) => {
+                    setEmail(event.target.value);
+                    if (error) {
+                      setError("");
+                      setState("idle");
+                    }
+                  }}
                   aria-invalid={Boolean(error)}
                   aria-describedby={error ? "newsletter-error" : undefined}
                   className={cn(

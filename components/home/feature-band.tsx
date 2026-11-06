@@ -7,7 +7,7 @@ export function FeatureBand() {
   const player = featuredPlayer;
   const clip = player.clips[0];
   const statEntries = [
-    { label: "KDA", value: player.stats.kda.toFixed(1) },
+    { label: "KDA", value: (player.stats.kda ?? 0).toFixed(1) },
     { label: "Win rate", value: `${player.stats.winRate}%` },
     { label: "Games", value: String(player.stats.matches) },
     { label: "MVPs", value: String(player.stats.mvp) },

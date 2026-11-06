@@ -5,6 +5,7 @@ import { site } from "@/lib/content";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { ClientChrome } from "@/components/effects/client-chrome";
+import { hasLogoAsset } from "@/lib/brand";
 
 const rajdhani = Rajdhani({
   subsets: ["latin"],
@@ -74,10 +75,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Skip to content
         </a>
-        <SiteHeader />
+        <SiteHeader hasLogo={hasLogoAsset} />
         <main id="main">{children}</main>
-        <SiteFooter />
-        <ClientChrome />
+        <SiteFooter hasLogo={hasLogoAsset} />
+        <ClientChrome hasLogo={hasLogoAsset} />
       </body>
     </html>
   );

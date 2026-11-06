@@ -21,7 +21,9 @@ export function PickEm() {
     setPick(value);
   };
 
-  const split = pick === "opponent" ? { menace: 31, opponent: 69 } : { menace: 68, opponent: 32 };
+  // Community split is a fixed snapshot of the vote data, not a reaction to this
+  // visitor's pick — otherwise the bar would jump on every click.
+  const split = { menace: 68, opponent: 32 };
 
   return (
     <section id="pick-em" className="shell py-16 md:py-24" aria-labelledby="pickem-heading">

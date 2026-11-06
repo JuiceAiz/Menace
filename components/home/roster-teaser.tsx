@@ -43,6 +43,9 @@ export function RosterTeaser() {
 function PlayerCard({ player, index }: { player: Player; index: number }) {
   const cardRef = useRef<HTMLAnchorElement>(null);
   const [revealed, setRevealed] = useState(false);
+  // On touch, the first tap reveals the signature pick instead of navigating;
+  // the second tap follows the link.
+  const blockNextClick = useRef(false);
 
   const handleMove = (event: React.PointerEvent<HTMLAnchorElement>) => {
     if (event.pointerType !== "mouse") return;
@@ -74,7 +77,15 @@ function PlayerCard({ player, index }: { player: Player; index: number }) {
         onPointerMove={handleMove}
         onPointerLeave={handleLeave}
         onPointerDown={(event) => {
-          if (event.pointerType !== "mouse") setRevealed((prev) => !prev);
+          if (event.pointerType === "mouse") return;
+          blockNextClick.current = !revealed;
+          setRevealed((prev) => !prev);
+        }}
+        onClick={(event) => {
+          if (blockNextClick.current) {
+            event.preventDefault();
+            blockNextClick.current = false;
+          }
         }}
         onFocus={() => setRevealed(true)}
         onBlur={() => setRevealed(false)}

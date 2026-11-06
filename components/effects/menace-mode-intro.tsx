@@ -15,7 +15,7 @@ type Phase = "closed" | "open" | "closing";
  * shows at most once per session. Unmounting is driven by explicit phase state
  * (never by an exit animation), so the overlay can't get stuck over the page.
  */
-export function MenaceModeIntro() {
+export function MenaceModeIntro({ hasLogo }: { hasLogo: boolean }) {
   const [phase, setPhase] = useState<Phase>("closed");
   const reduceMotion = useReducedMotion();
 
@@ -35,7 +35,6 @@ export function MenaceModeIntro() {
     setPhase((current) => (current === "open" ? "closing" : current));
   }, []);
 
-  // Auto-dismiss on a timer, and always release the overlay afterwards.
   useEffect(() => {
     if (phase !== "open") return;
     const timer = window.setTimeout(dismiss, HOLD_MS);
@@ -63,6 +62,7 @@ export function MenaceModeIntro() {
   if (phase === "closed") return null;
 
   const closing = phase === "closing";
+  const markClass = hasLogo ? "h-full w-full" : "whitespace-nowrap text-[34px] sm:text-[46px]";
 
   return (
     <motion.div
@@ -90,13 +90,13 @@ export function MenaceModeIntro() {
 
       <div className="relative flex flex-col items-center">
         <motion.div
-          className="relative h-28 w-28 sm:h-36 sm:w-36"
+          className="relative flex h-28 w-28 items-center justify-center sm:h-36 sm:w-36"
           initial={{ scale: 1.35, rotate: -6, opacity: 0 }}
           animate={{ scale: 1, rotate: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
           <span className="absolute inset-0 flex items-center justify-center opacity-80 blur-[2px] mix-blend-screen" aria-hidden>
-            <BrandLogo className="h-full w-full" alt="" />
+            <BrandLogo hasLogo={hasLogo} variant="wordmark" className={markClass} alt="" />
           </span>
           <motion.span
             className="absolute inset-0 flex items-center justify-center"
@@ -104,10 +104,10 @@ export function MenaceModeIntro() {
             transition={{ duration: 0.85, repeat: 1, repeatDelay: 0 }}
             aria-hidden
           >
-            <BrandLogo className="h-full w-full" alt="" />
+            <BrandLogo hasLogo={hasLogo} variant="wordmark" className={markClass} alt="" />
           </motion.span>
           <span className="absolute inset-0 flex items-center justify-center">
-            <BrandLogo className="h-full w-full" alt="Menace Esports logo" />
+            <BrandLogo hasLogo={hasLogo} variant="wordmark" className={markClass} alt="Menace Esports logo" />
           </span>
         </motion.div>
 

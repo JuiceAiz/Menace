@@ -33,7 +33,7 @@ const columns = [
   },
 ];
 
-export function SiteFooter() {
+export function SiteFooter({ hasLogo }: { hasLogo: boolean }) {
   return (
     <footer className="relative mt-24 border-t border-line/80 bg-[#0a0512]">
       <div className="pointer-events-none absolute -top-24 left-1/2 h-48 w-[70%] -translate-x-1/2 rounded-full bg-brand/10 blur-[90px]" aria-hidden />
@@ -41,7 +41,7 @@ export function SiteFooter() {
         <div className="grid gap-10 md:grid-cols-[1.4fr_repeat(3,1fr)]">
           <div>
             <div className="flex items-center gap-3">
-              <BrandLogo className="h-11 w-11" />
+              <BrandLogo hasLogo={hasLogo} className="h-11 w-11" />
               <div>
                 <p className="font-display text-2xl font-bold tracking-[0.2em] text-white">MENACE</p>
                 <p className="mt-1 text-[9px] font-semibold uppercase tracking-[0.28em] text-muted">

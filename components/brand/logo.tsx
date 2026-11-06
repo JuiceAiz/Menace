@@ -1,39 +1,41 @@
 "use client";
 
-import { useState } from "react";
 import { cn } from "@/lib/cn";
 
 /**
- * The official Menace mark must be used exactly as supplied.
- * Drop the provided PNG at `public/brand/menace-logo.png` (any square size, 512px+).
- * Until that file exists we render a typographic fallback so no layout is broken.
+ * The official Menace mark is used exactly as supplied — never redrawn.
+ *
+ * `hasLogo` is resolved on the server (see `lib/brand.ts`) so a missing file
+ * never produces a broken image or a 404: the site falls back to a wordmark.
  */
 export const LOGO_SRC = "/brand/menace-logo.png";
 
 export function BrandLogo({
+  hasLogo,
+  variant = "mark",
   className,
-  wordmarkClassName,
   alt = "Menace Esports logo",
 }: {
+  hasLogo: boolean;
+  variant?: "mark" | "wordmark";
   className?: string;
-  wordmarkClassName?: string;
   alt?: string;
 }) {
-  const [missing, setMissing] = useState(false);
-
-  // Never approximate the mark: rather than faking it, hold an empty brand-coloured
-  // slot until the official file is dropped in.
-  if (missing) {
-    return (
-      <span
-        aria-hidden
-        className={cn(
-          "block border border-brand/40 bg-brand/15",
-          className,
-          wordmarkClassName,
-        )}
-      />
-    );
+  if (!hasLogo) {
+    if (variant === "wordmark") {
+      return (
+        <span
+          className={cn(
+            "font-display font-bold uppercase leading-none tracking-[0.06em] text-lavender",
+            className,
+          )}
+          aria-hidden
+        >
+          Menace
+        </span>
+      );
+    }
+    return null;
   }
 
   return (
@@ -44,7 +46,10 @@ export function BrandLogo({
       width={512}
       height={512}
       decoding="async"
-      onError={() => setMissing(true)}
+      onError={(event) => {
+        // Stale build after the asset was removed: hide rather than show a broken icon.
+        event.currentTarget.style.display = "none";
+      }}
       className={cn("object-contain", className)}
     />
   );

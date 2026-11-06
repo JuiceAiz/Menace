@@ -19,7 +19,7 @@ const extraLinks = [
 
 const allLinks = [...site.nav, ...extraLinks];
 
-export function SiteHeader() {
+export function SiteHeader({ hasLogo }: { hasLogo: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
@@ -59,7 +59,7 @@ export function SiteHeader() {
     >
       <div className="shell flex h-[72px] items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-3 py-2" aria-label="Menace Esports — home">
-          <BrandLogo className="h-9 w-9 shrink-0 md:h-10 md:w-10" />
+          <BrandLogo hasLogo={hasLogo} className="h-9 w-9 shrink-0 md:h-10 md:w-10" />
           <span className="leading-none">
             <span className="block font-display text-[19px] font-bold tracking-[0.24em] text-white">MENACE</span>
             <span className="mt-1 hidden text-[8px] font-semibold uppercase tracking-[0.3em] text-muted sm:block">
@@ -139,7 +139,7 @@ export function SiteHeader() {
 
       {open ? (
         <div id="mobile-menu" className="lg:hidden">
-          <div className="border-t border-line/70 bg-ink/98 px-5 pb-8 pt-2 backdrop-blur-xl">
+          <div className="border-t border-line/70 bg-ink/95 px-5 pb-8 pt-2 backdrop-blur-xl">
             <nav aria-label="Mobile" className="flex flex-col">
               {allLinks.map((item, index) => (
                 <Link
