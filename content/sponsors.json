@@ -1,0 +1,19 @@
+{
+  "note": "Placeholder partners. Replace names, tiers and links with signed sponsors.",
+  "partners": [
+    { "name": "Aether Energy", "tier": "Title Partner", "url": "#" },
+    { "name": "Nova Bank", "tier": "Principal Partner", "url": "#" },
+    { "name": "Kova Peripherals", "tier": "Official Peripherals", "url": "#" },
+    { "name": "Lagos Fiber", "tier": "Official Connectivity", "url": "#" },
+    { "name": "Hypergrid", "tier": "Official Hardware", "url": "#" },
+    { "name": "Studio Nine", "tier": "Official Apparel", "url": "#" }
+  ],
+  "mediaKit": {
+    "headline": "Put your brand in front of the loudest fanbase in African MLBB.",
+    "stats": [
+      { "label": "Monthly reach", "value": "2.1M" },
+      { "label": "Discord members", "value": "12.4K" },
+      { "label": "Avg. watch time", "value": "38m" }
+    ]
+  }
+}

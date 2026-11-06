@@ -1,0 +1,28 @@
+{
+  "name": "Menace",
+  "fullName": "Menace Esports",
+  "shortName": "MNC",
+  "tagline": "Be a Menace.",
+  "est": "2025",
+  "game": "Mobile Legends: Bang Bang",
+  "description": "Menace Esports is a Lagos-born Mobile Legends: Bang Bang squad built to win titles and bring new noise to African esports.",
+  "url": "https://menace.gg",
+  "email": "hello@menace.gg",
+  "pressEmail": "press@menace.gg",
+  "location": "Lagos, Nigeria",
+  "socials": [
+    { "platform": "x", "label": "X / Twitter", "url": "https://x.com/menaceesports" },
+    { "platform": "instagram", "label": "Instagram", "url": "https://instagram.com/menaceesports" },
+    { "platform": "tiktok", "label": "TikTok", "url": "https://tiktok.com/@menaceesports" },
+    { "platform": "youtube", "label": "YouTube", "url": "https://youtube.com/@menaceesports" }
+  ],
+  "discord": { "label": "Join the Menace Army", "url": "https://discord.gg/menace", "members": "12.4K" },
+  "stream": { "platform": "youtube", "label": "Watch Live", "url": "https://youtube.com/@menaceesports/live" },
+  "nav": [
+    { "label": "Roster", "href": "/roster" },
+    { "label": "Matches", "href": "/matches" },
+    { "label": "News", "href": "/news" },
+    { "label": "Media", "href": "/media" },
+    { "label": "Store", "href": "/store" }
+  ]
+}

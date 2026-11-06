@@ -1,0 +1,213 @@
+{
+  "note": "Placeholder roster data. Photos, stats and socials are demo values until the team supplies real ones.",
+  "players": [
+    {
+      "slug": "vyper",
+      "ign": "VYPER",
+      "realName": "Tobi Adeyemi",
+      "role": "Gold",
+      "group": "starter",
+      "number": "01",
+      "country": "Nigeria",
+      "countryCode": "NG",
+      "image": null,
+      "heroSplash": null,
+      "accent": "#8b4dff",
+      "signatureHeroes": [
+        { "name": "Beatrix", "slug": "beatrix" },
+        { "name": "Wanwan", "slug": "wanwan" },
+        { "name": "Claude", "slug": "claude" }
+      ],
+      "socials": [
+        { "platform": "x", "url": "https://x.com/menaceesports" },
+        { "platform": "instagram", "url": "https://instagram.com/menaceesports" }
+      ],
+      "featured": true,
+      "quote": "They can ban the hero. They can't ban the hands.",
+      "bio": "The calmest voice on comms and the coldest finisher in the league. Tobi turned down two import offers to build something at home, and it shows every time the game hits 15 minutes.",
+      "stats": { "kda": 6.4, "winRate": 71, "matches": 48, "mvp": 19 },
+      "achievements": [
+        "MPL Nigeria Season 3 — Champion",
+        "MPL Nigeria Season 4 — Regular season MVP (Gold lane)",
+        "MLBB National Cup 2026 — Runner-up"
+      ],
+      "clips": [
+        { "title": "Vyper 1v3 at the Lord pit", "duration": "0:24", "url": "https://youtube.com/@menaceesports" },
+        { "title": "Perfect Beatrix kiting — Grand Final G4", "duration": "0:41", "url": "https://youtube.com/@menaceesports" }
+      ]
+    },
+    {
+      "slug": "zerox",
+      "ign": "ZEROX",
+      "realName": "Chinedu Obi",
+      "role": "EXP",
+      "group": "starter",
+      "number": "02",
+      "country": "Nigeria",
+      "countryCode": "NG",
+      "image": null,
+      "heroSplash": null,
+      "accent": "#6d3bff",
+      "signatureHeroes": [
+        { "name": "Yu Zhong", "slug": "yu-zhong" },
+        { "name": "Esmeralda", "slug": "esmeralda" },
+        { "name": "Fredrinn", "slug": "fredrinn" }
+      ],
+      "socials": [{ "platform": "x", "url": "https://x.com/menaceesports" }],
+      "featured": false,
+      "quote": "Give me the side lane and a timer. I'll give you the map.",
+      "bio": "A lane bully who plays the map like a chessboard. Chinedu's split-push timing is the reason Menace closes series in under 25 minutes.",
+      "stats": { "kda": 4.8, "winRate": 68, "matches": 51, "mvp": 12 },
+      "achievements": ["MPL Nigeria Season 3 — Champion", "MPL Nigeria Season 4 — All-Pro EXP lane"],
+      "clips": [{ "title": "Zerox backdoor — Week 4", "duration": "0:18", "url": "https://youtube.com/@menaceesports" }]
+    },
+    {
+      "slug": "kaira",
+      "ign": "KAIRA",
+      "realName": "Amara Nwosu",
+      "role": "Mid",
+      "group": "starter",
+      "number": "03",
+      "country": "Nigeria",
+      "countryCode": "NG",
+      "image": null,
+      "heroSplash": null,
+      "accent": "#a97dff",
+      "signatureHeroes": [
+        { "name": "Yve", "slug": "yve" },
+        { "name": "Pharsa", "slug": "pharsa" },
+        { "name": "Valentina", "slug": "valentina" }
+      ],
+      "socials": [
+        { "platform": "instagram", "url": "https://instagram.com/menaceesports" },
+        { "platform": "tiktok", "url": "https://tiktok.com/@menaceesports" }
+      ],
+      "featured": false,
+      "quote": "Control the mid, control the tempo.",
+      "bio": "The team's tempo dial. Amara plays control mages with a roamer's instincts, and her voice is the one that calls every rotation.",
+      "stats": { "kda": 5.6, "winRate": 74, "matches": 50, "mvp": 16 },
+      "achievements": ["MPL Nigeria Season 4 — Mid lane All-Pro", "MPL Nigeria Season 3 — Champion"],
+      "clips": [{ "title": "Kaira Yve ultimate into a 5-man stun", "duration": "0:29", "url": "https://youtube.com/@menaceesports" }]
+    },
+    {
+      "slug": "spectre",
+      "ign": "SPECTRE",
+      "realName": "Ibrahim Yusuf",
+      "role": "Jungle",
+      "group": "starter",
+      "number": "04",
+      "country": "Nigeria",
+      "countryCode": "NG",
+      "image": null,
+      "heroSplash": null,
+      "accent": "#7c3aed",
+      "signatureHeroes": [
+        { "name": "Fanny", "slug": "fanny" },
+        { "name": "Ling", "slug": "ling" },
+        { "name": "Hayabusa", "slug": "hayabusa" }
+      ],
+      "socials": [{ "platform": "tiktok", "url": "https://tiktok.com/@menaceesports" }],
+      "featured": false,
+      "quote": "If I'm on Fanny, the wall is a suggestion.",
+      "bio": "Mechanical chaos on a leash. Ibrahim is the reason opposing analysts spend their first ban on Fanny and still lose to Ling.",
+      "stats": { "kda": 7.1, "winRate": 76, "matches": 47, "mvp": 22 },
+      "achievements": [
+        "MPL Nigeria Season 4 — Regular season MVP",
+        "Most kills in a single series — MPL NG S4 (31)"
+      ],
+      "clips": [{ "title": "Spectre Fanny steel cable quadra", "duration": "0:33", "url": "https://youtube.com/@menaceesports" }]
+    },
+    {
+      "slug": "sabre",
+      "ign": "SABRE",
+      "realName": "Daniel Eze",
+      "role": "Roam",
+      "group": "starter",
+      "number": "05",
+      "country": "Nigeria",
+      "countryCode": "NG",
+      "image": null,
+      "heroSplash": null,
+      "accent": "#5b21b6",
+      "signatureHeroes": [
+        { "name": "Chou", "slug": "chou" },
+        { "name": "Khufra", "slug": "khufra" },
+        { "name": "Mathilda", "slug": "mathilda" }
+      ],
+      "socials": [{ "platform": "x", "url": "https://x.com/menaceesports" }],
+      "featured": false,
+      "quote": "I don't need farm. I need a reason.",
+      "bio": "The ignition key. Daniel's engage timing sets the tone, and his ward economy quietly wins the map before the first Lord.",
+      "stats": { "kda": 3.9, "winRate": 72, "matches": 52, "mvp": 8 },
+      "achievements": ["MPL Nigeria Season 3 — Champion", "MPL Nigeria Season 4 — Roam All-Pro"],
+      "clips": [{ "title": "Sabre Chou pick on the enemy jungler", "duration": "0:15", "url": "https://youtube.com/@menaceesports" }]
+    },
+    {
+      "slug": "nova",
+      "ign": "NOVA",
+      "realName": "Blessing Okafor",
+      "role": "Roam",
+      "group": "sub",
+      "number": "06",
+      "country": "Nigeria",
+      "countryCode": "NG",
+      "image": null,
+      "heroSplash": null,
+      "accent": "#8b4dff",
+      "signatureHeroes": [
+        { "name": "Angela", "slug": "angela" },
+        { "name": "Akai", "slug": "akai" },
+        { "name": "Tigreal", "slug": "tigreal" }
+      ],
+      "socials": [{ "platform": "instagram", "url": "https://instagram.com/menaceesports" }],
+      "featured": false,
+      "quote": "Depth wins titles. I'm here for the long season.",
+      "bio": "Academy graduate and the squad's sixth man. Blessing covers both roam and jungle, which lets Menace run two completely different drafts off the bench.",
+      "stats": { "kda": 4.2, "winRate": 66, "matches": 18, "mvp": 3 },
+      "achievements": ["Menace Academy — Season 1 standout"],
+      "clips": []
+    },
+    {
+      "slug": "rex",
+      "ign": "REX",
+      "realName": "Emeka Balogun",
+      "role": "Coach",
+      "group": "staff",
+      "number": "C",
+      "country": "Nigeria",
+      "countryCode": "NG",
+      "image": null,
+      "heroSplash": null,
+      "accent": "#f5b942",
+      "signatureHeroes": [],
+      "socials": [{ "platform": "x", "url": "https://x.com/menaceesports" }],
+      "featured": false,
+      "quote": "Draft the game you want to play, not the one they fear.",
+      "bio": "Former analyst turned head coach. Emeka built the Menace draft book around tempo and side-lane pressure, and it carried the squad to a Season 3 title in their first year.",
+      "stats": { "winRate": 70, "matches": 71, "series": 24, "titles": 3 },
+      "achievements": ["MPL Nigeria Season 3 — Champion (Head Coach)"],
+      "clips": []
+    },
+    {
+      "slug": "oracle",
+      "ign": "ORACLE",
+      "realName": "Fatima Sule",
+      "role": "Analyst",
+      "group": "staff",
+      "number": "A",
+      "country": "Nigeria",
+      "countryCode": "NG",
+      "image": null,
+      "heroSplash": null,
+      "accent": "#d9ccff",
+      "signatureHeroes": [],
+      "socials": [{ "platform": "x", "url": "https://x.com/menaceesports" }],
+      "featured": false,
+      "quote": "Every draft leaks a habit. We hunt habits.",
+      "bio": "Builds the opponent models and the pick/ban trees. Fatima's prep decks are the reason Menace is 9-2 in series-deciding games.",
+      "stats": { "winRate": 70, "matches": 71, "reports": 140, "titles": 3 },
+      "achievements": ["MPL Nigeria Season 4 — Analyst of the Year (nominee)"],
+      "clips": []
+    }
+  ]
+}

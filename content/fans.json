@@ -1,0 +1,29 @@
+{
+  "note": "Placeholder community data. Pick'em votes are currently stored in the browser until a backend is added.",
+  "pickem": {
+    "prompt": "Who takes Week 6?",
+    "reward": "Correct picks earn 25 Army points.",
+    "leaderboard": [
+      { "username": "ade_the_menace", "points": 340, "streak": 7 },
+      { "username": "fanny_enjoyer", "points": 315, "streak": 5 },
+      { "username": "lagos_lightning", "points": 298, "streak": 6 },
+      { "username": "chou_main_babe", "points": 274, "streak": 4 },
+      { "username": "zero_lag_king", "points": 261, "streak": 3 }
+    ]
+  },
+  "army": {
+    "headline": "The Menace Army",
+    "blurb": "Twelve thousand strong, louder every week. Fan art, chants, edits — this wall belongs to you.",
+    "topFans": [
+      { "name": "Ade", "handle": "@ade_the_menace", "badge": "Founding member" },
+      { "name": "Zainab", "handle": "@zai.edits", "badge": "Top clip creator" },
+      { "name": "Kelechi", "handle": "@kelechi_gg", "badge": "Away-day legend" },
+      { "name": "Tunde", "handle": "@tundex", "badge": "Matchday host" }
+    ],
+    "fanArt": [
+      { "title": "Vyper, midnight gold", "artist": "@zai.edits", "format": "Digital painting" },
+      { "title": "Menace Army chant poster", "artist": "@kelechi_gg", "format": "Poster" },
+      { "title": "Spectre Fanny study", "artist": "@inkbyade", "format": "Ink illustration" }
+    ]
+  }
+}

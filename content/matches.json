@@ -1,0 +1,127 @@
+{
+  "note": "Placeholder schedule. Set live.active to true and fill score/stream to switch the home hero into live match mode.",
+  "live": {
+    "active": false,
+    "matchId": "mnc-vs-onx-2026-11-21",
+    "opponent": { "name": "Onyx Legion", "tag": "ONX", "logo": null },
+    "tournament": "MPL Nigeria",
+    "stage": "Season 4 · Week 6",
+    "format": "BO3",
+    "score": { "menace": 1, "opponent": 0 },
+    "game": 2,
+    "stream": { "platform": "youtube", "url": "https://youtube.com/@menaceesports/live", "embedId": "dQw4w9WgXcQ" }
+  },
+  "next": {
+    "id": "mnc-vs-onx-2026-11-21",
+    "opponent": { "name": "Onyx Legion", "tag": "ONX", "logo": null },
+    "tournament": "MPL Nigeria",
+    "season": "Season 4",
+    "stage": "Regular Season · Week 6",
+    "startsAt": "2026-11-21T18:00:00+01:00",
+    "format": "BO3",
+    "venue": "Online · Best of 3",
+    "stream": { "platform": "youtube", "url": "https://youtube.com/@menaceesports/live" },
+    "calendar": {
+      "title": "MENACE vs Onyx Legion — MPL Nigeria S4",
+      "durationMinutes": 120,
+      "location": "Online"
+    }
+  },
+  "upcoming": [
+    {
+      "id": "mnc-vs-onx-2026-11-21",
+      "opponent": { "name": "Onyx Legion", "tag": "ONX", "logo": null },
+      "tournament": "MPL Nigeria",
+      "season": "Season 4",
+      "stage": "Regular Season · Week 6",
+      "startsAt": "2026-11-21T18:00:00+01:00",
+      "format": "BO3",
+      "venue": "Online · Best of 3",
+      "stream": { "platform": "youtube", "url": "https://youtube.com/@menaceesports/live" }
+    },
+    {
+      "id": "mnc-vs-sol-2026-11-28",
+      "opponent": { "name": "Solaris GC", "tag": "SOL", "logo": null },
+      "tournament": "MPL Nigeria",
+      "season": "Season 4",
+      "stage": "Regular Season · Week 7",
+      "startsAt": "2026-11-28T16:30:00+01:00",
+      "format": "BO3",
+      "venue": "Online · Best of 3",
+      "stream": { "platform": "youtube", "url": "https://youtube.com/@menaceesports/live" }
+    },
+    {
+      "id": "mnc-vs-nvr-2026-12-05",
+      "opponent": { "name": "Nova Reign", "tag": "NVR", "logo": null },
+      "tournament": "MPL Nigeria",
+      "season": "Season 4",
+      "stage": "Regular Season · Week 8",
+      "startsAt": "2026-12-05T19:00:00+01:00",
+      "format": "BO3",
+      "venue": "Online · Best of 3",
+      "stream": { "platform": "youtube", "url": "https://youtube.com/@menaceesports/live" }
+    }
+  ],
+  "results": [
+    {
+      "id": "mnc-vs-irv-2026-11-01",
+      "date": "2026-11-01T17:00:00+01:00",
+      "opponent": { "name": "Iron Vipers", "tag": "IRV", "logo": null },
+      "tournament": "MPL Nigeria",
+      "season": "Season 4",
+      "stage": "Regular Season · Week 5",
+      "format": "BO3",
+      "score": { "menace": 2, "opponent": 0 },
+      "outcome": "win",
+      "vod": "https://youtube.com/@menaceesports"
+    },
+    {
+      "id": "mnc-vs-apex-2026-10-25",
+      "date": "2026-10-25T17:00:00+01:00",
+      "opponent": { "name": "Apex Dynasty", "tag": "APX", "logo": null },
+      "tournament": "MPL Nigeria",
+      "season": "Season 4",
+      "stage": "Regular Season · Week 4",
+      "format": "BO3",
+      "score": { "menace": 1, "opponent": 2 },
+      "outcome": "loss",
+      "vod": "https://youtube.com/@menaceesports"
+    },
+    {
+      "id": "mnc-vs-volt-2026-10-18",
+      "date": "2026-10-18T19:30:00+01:00",
+      "opponent": { "name": "Volt Empire", "tag": "VLT", "logo": null },
+      "tournament": "MPL Nigeria",
+      "season": "Season 4",
+      "stage": "Regular Season · Week 3",
+      "format": "BO3",
+      "score": { "menace": 2, "opponent": 1 },
+      "outcome": "win",
+      "vod": "https://youtube.com/@menaceesports"
+    },
+    {
+      "id": "mnc-vs-nfl-2026-10-11",
+      "date": "2026-10-11T16:00:00+01:00",
+      "opponent": { "name": "Nightfall", "tag": "NFL", "logo": null },
+      "tournament": "MPL Nigeria",
+      "season": "Season 4",
+      "stage": "Regular Season · Week 2",
+      "format": "BO3",
+      "score": { "menace": 2, "opponent": 0 },
+      "outcome": "win",
+      "vod": "https://youtube.com/@menaceesports"
+    },
+    {
+      "id": "mnc-vs-onx-2026-10-04",
+      "date": "2026-10-04T17:00:00+01:00",
+      "opponent": { "name": "Onyx Legion", "tag": "ONX", "logo": null },
+      "tournament": "MPL Nigeria",
+      "season": "Season 4",
+      "stage": "Regular Season · Week 1",
+      "format": "BO3",
+      "score": { "menace": 2, "opponent": 1 },
+      "outcome": "win",
+      "vod": "https://youtube.com/@menaceesports"
+    }
+  ]
+}

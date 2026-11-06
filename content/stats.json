@@ -1,0 +1,23 @@
+{
+  "note": "Placeholder performance figures used by the home stat dashboard.",
+  "season": "Season 4",
+  "totals": [
+    { "label": "Matches won", "value": 48, "suffix": "" },
+    { "label": "Series win rate", "value": 72, "suffix": "%" },
+    { "label": "Avg. game time", "value": 17, "suffix": "m" },
+    { "label": "Trophies", "value": 3, "suffix": "" }
+  ],
+  "winRateByTournament": [
+    { "label": "MPL NG · S4", "value": 76, "detail": "13W – 4L" },
+    { "label": "MPL NG · S3", "value": 68, "detail": "12W – 6L" },
+    { "label": "MLBB National Cup", "value": 62, "detail": "8W – 5L" },
+    { "label": "Academy Split", "value": 55, "detail": "6W – 5L" }
+  ],
+  "heroPickRates": [
+    { "label": "Fanny", "value": 42, "detail": "8W – 2L" },
+    { "label": "Gusion", "value": 36, "detail": "7W – 2L" },
+    { "label": "Yve", "value": 28, "detail": "5W – 1L" },
+    { "label": "Chou", "value": 26, "detail": "5W – 2L" },
+    { "label": "Beatrix", "value": 21, "detail": "4W – 1L" }
+  ]
+}
